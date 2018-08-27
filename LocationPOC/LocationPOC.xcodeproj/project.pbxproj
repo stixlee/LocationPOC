@@ -7,17 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E16F40B2132136C001B40FC /* EventBroker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16F40A2132136C001B40FC /* EventBroker.swift */; };
+		5E16F40F213213C0001B40FC /* LocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16F40D213213C0001B40FC /* LocationManagerDelegate.swift */; };
+		5E16F410213213C0001B40FC /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16F40E213213C0001B40FC /* LocationManager.swift */; };
+		5E16F41621321671001B40FC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E16F41521321671001B40FC /* MainViewController.swift */; };
 		5E791BCD2132101500D4B479 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E791BCC2132101500D4B479 /* AppDelegate.swift */; };
-		5E791BCF2132101500D4B479 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E791BCE2132101500D4B479 /* ViewController.swift */; };
 		5E791BD22132101500D4B479 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E791BD02132101500D4B479 /* Main.storyboard */; };
 		5E791BD42132101800D4B479 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E791BD32132101800D4B479 /* Assets.xcassets */; };
 		5E791BD72132101800D4B479 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E791BD52132101800D4B479 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E16F40A2132136C001B40FC /* EventBroker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventBroker.swift; sourceTree = "<group>"; };
+		5E16F40D213213C0001B40FC /* LocationManagerDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManagerDelegate.swift; sourceTree = "<group>"; };
+		5E16F40E213213C0001B40FC /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		5E16F41521321671001B40FC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		5E791BC92132101500D4B479 /* LocationPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E791BCC2132101500D4B479 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5E791BCE2132101500D4B479 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5E791BD12132101500D4B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E791BD32132101800D4B479 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E791BD62132101800D4B479 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -35,6 +41,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E16F40921321347001B40FC /* EventBroker */ = {
+			isa = PBXGroup;
+			children = (
+				5E16F40A2132136C001B40FC /* EventBroker.swift */,
+			);
+			path = EventBroker;
+			sourceTree = "<group>";
+		};
+		5E16F40C2132139F001B40FC /* SharedLocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				5E16F40E213213C0001B40FC /* LocationManager.swift */,
+				5E16F40D213213C0001B40FC /* LocationManagerDelegate.swift */,
+			);
+			path = SharedLocationManager;
+			sourceTree = "<group>";
+		};
+		5E16F411213215EA001B40FC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5E16F41521321671001B40FC /* MainViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		5E16F41221321604001B40FC /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				5E791BD02132101500D4B479 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		5E16F41321321622001B40FC /* SharedAssets */ = {
+			isa = PBXGroup;
+			children = (
+				5E791BD32132101800D4B479 /* Assets.xcassets */,
+				5E791BD82132101800D4B479 /* Info.plist */,
+			);
+			name = SharedAssets;
+			sourceTree = "<group>";
+		};
+		5E16F4142132163A001B40FC /* AppLaunch */ = {
+			isa = PBXGroup;
+			children = (
+				5E791BD52132101800D4B479 /* LaunchScreen.storyboard */,
+				5E791BCC2132101500D4B479 /* AppDelegate.swift */,
+			);
+			path = AppLaunch;
+			sourceTree = "<group>";
+		};
 		5E791BC02132101500D4B479 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +111,12 @@
 		5E791BCB2132101500D4B479 /* LocationPOC */ = {
 			isa = PBXGroup;
 			children = (
-				5E791BCC2132101500D4B479 /* AppDelegate.swift */,
-				5E791BCE2132101500D4B479 /* ViewController.swift */,
-				5E791BD02132101500D4B479 /* Main.storyboard */,
-				5E791BD32132101800D4B479 /* Assets.xcassets */,
-				5E791BD52132101800D4B479 /* LaunchScreen.storyboard */,
-				5E791BD82132101800D4B479 /* Info.plist */,
+				5E16F4142132163A001B40FC /* AppLaunch */,
+				5E16F41321321622001B40FC /* SharedAssets */,
+				5E16F41221321604001B40FC /* Storyboards */,
+				5E16F411213215EA001B40FC /* Controllers */,
+				5E16F40C2132139F001B40FC /* SharedLocationManager */,
+				5E16F40921321347001B40FC /* EventBroker */,
 			);
 			path = LocationPOC;
 			sourceTree = "<group>";
@@ -135,8 +192,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E791BCF2132101500D4B479 /* ViewController.swift in Sources */,
 				5E791BCD2132101500D4B479 /* AppDelegate.swift in Sources */,
+				5E16F410213213C0001B40FC /* LocationManager.swift in Sources */,
+				5E16F41621321671001B40FC /* MainViewController.swift in Sources */,
+				5E16F40B2132136C001B40FC /* EventBroker.swift in Sources */,
+				5E16F40F213213C0001B40FC /* LocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
